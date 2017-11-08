@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffd505;
+  color: #fff;
+  font: normal 18px Helvetica, Arial, sans-serif;
+}
+
+header {
+  background: #047ec1;
+  margin: 0 auto;
+  padding: 30px 25px 0 25px;
+  height: 105px;
+  width: 900px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+h1 {
+  font-size: 38.5px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+main {
+  margin: 30px auto;
+  padding: 25px;
+  width: 900px;
+  height: 616px;
+  background: #ececec;
+  color: black;
+}
+
+ul {
+  width: 200px;
+  height: 235px;
+  background: #fff;
+}
+
+div:last-child {
+  width: 49%;
+  margin: 17px 0 10px 0;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  display: block;
+  height: 140px;
+  padding: 0 auto;
+  margin: 15px auto 12px auto;
+}
+
+li.item {
+  font: bold 19.25px Helvetica, Arial, sans-serif;
+  padding: 8px 0 0 15px;
+}
+
+li.price {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  padding: 5px 0 10px 15px;
+}
+
+figure {
+  display: none;
+}
+
+:checked + figure {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+:checked + figure > img {
+  visibility: visible;
+}
+
+.large_image {
+  width: 400px;
+  height: auto;
+  position: fixed;
+  left: 50%;
+  top: 10.9%;
+  margin-left: -200px;
+}
+
+input {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
